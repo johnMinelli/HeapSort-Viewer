@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="chooserPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progettoalgoritmi.AlgoTypeSelectionController">
+   <children>
+      <Button fx:id="btn_motion" layoutX="149.0" layoutY="223.0" mnemonicParsing="false" onAction="#goToMotion" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: EF4836; -fx-background-radius: 15px;" text="Motion" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_stepByStep" layoutX="466.0" layoutY="223.0" mnemonicParsing="false" onAction="#goToStepByStep" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1ABC9C; -fx-background-radius: 15;" text="Step" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Text layoutX="149.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scegli la modalità di esecuzione dell'algoritmo:" wrappingWidth="517.03125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

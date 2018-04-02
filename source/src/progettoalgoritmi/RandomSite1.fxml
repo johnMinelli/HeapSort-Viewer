@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="randomPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progettoalgoritmi.RandomSite1Controller">
+   <children>
+      <Label layoutX="67.0" layoutY="74.0" prefHeight="35.0" prefWidth="339.0" text="Scegli la dimensione dell'input :">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="txt_input_size" layoutX="406.0" layoutY="76.0" prefHeight="31.0" prefWidth="110.0" />
+      <Button fx:id="btn_confirm_size" layoutX="572.0" layoutY="70.0" mnemonicParsing="false" onAction="#see_array" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #C0392B;" text="conferma" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="312.0" layoutY="158.0" text="Ecco i tuoi input:">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <AnchorPane fx:id="anc_lbl" layoutX="160.0" layoutY="228.0" prefHeight="200.0" prefWidth="500.0" />
+      <Button fx:id="next_btn" disable="true" layoutX="371.0" layoutY="447.0" mnemonicParsing="false" onAction="#goToSelection" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #C0392B;" text="Prosegui" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text fx:id="error_txt" fill="#e80e0e" layoutX="169.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controlla la dimensione massima dell'input e di inserire solo numeri" visible="false" wrappingWidth="461.3564453125" />
+   </children>
+</AnchorPane>
